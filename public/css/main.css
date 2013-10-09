@@ -1,0 +1,266 @@
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+.main {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  display: inline-block;
+  margin-left: 350px;
+  position: absolute;
+  top: 120px;
+}
+
+body {
+  padding-top: 0px;
+}
+
+a:hover {
+  mouse: pointer;
+}
+
+/* ==========================================================================
+   Search styles
+   ========================================================================== */
+.search-button-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#search-button {
+  width: 40%;
+  margin: 30px;
+  font-size: 40px;
+}
+
+.advanced {
+  padding: 20px;
+  display: none;
+}
+
+.advanced label {
+  width: 100px;
+}
+
+.advanced .month {
+  display: inline-block;
+}
+
+.advanced .day {
+  display: inline-block;
+}
+
+.advanced .year {
+  display: inline-block;
+}
+
+.advanced .sanity-check {
+  display: none;
+  padding-left: 10px;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+/* ==========================================================================
+   Search History 
+   ========================================================================== */
+.search-history {
+  padding: 20px;
+  display: none;
+}
+
+.search-history .history-header {
+  font-size: 14px;
+}
+
+.search-history .item {
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+
+.search-history .keyword {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 0px;
+}
+
+.search-history .options {
+  display: inline-block;
+  padding-left: 20px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/* ==========================================================================
+   Tweet styles
+   ========================================================================== */
+
+.tweet-container {
+  width: 100%;
+  min-height: 98px;
+}
+
+.tweet .profile-image {
+  position: absolute;
+}
+
+.tweet .content {
+  display: inline-block;
+  padding-left: 89px; /* 19 (padding) + 70 (picwidth) */
+  width: 100%;
+}
+
+.tweet .content .name {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tweet .content .handle {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+.tweet .content .text {
+  padding-bottom: 5px;
+}
+
+.tweet .content .date {
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.tweet .content .details {
+  display: inline-block;
+  opacity: 0.7;
+  float: right;
+}
+
+.tweet .content .details a{
+  color: #333;
+}
+
+.tweet .content .user-info {
+  display: none;
+}
+
+.tweet .content .tweet-info {
+  display: none;
+}
+
+.tweet .content .user-info hr {
+  margin-top: 3px;
+  margin-bottom: 7px;
+  border-top: 1px solid #bbb;
+}
+
+.tweet .count-section {
+  display: inline-block;
+}
+
+.tweet .user-info .count-section {
+  padding-left: 10px;
+}
+
+.tweet .user-info .count-section label {
+  font-weight: normal;
+}
+
+.tweet .user-info .count-section .count {
+  font-weight: bold;
+}
+
+.tweet .tweet-info hr.top {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  border-top: 1px solid #bbb;
+}
+
+.tweet .tweet-info hr.bottom {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-top: 1px solid #bbb;
+}
+
+.favorite-count, .retweet-count {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.favorite-count {
+  border-right: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+}
+
+.time-zone, .via {
+  opacity: 0.7;
+  padding-left: 10px;
+}
+
+.time-zone label {
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+
+.time-zone span, .via label {
+  font-size: 14px;
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+.no-results {
+  text-align: center;
+}
+
+/* ==========================================================================
+   Bottom loading
+   ========================================================================== */
+
+#loading {
+  display: none;
+}
+
+/* ==========================================================================
+   Twitter bird
+   ========================================================================== */
+
+.twitter-bird {
+  background-image: url(twitter-bird-sprite.png);
+  cursor: pointer;
+  display: inline-block;
+  height: 130px;
+  margin: 50px -30% 0 0;
+  width: 150px;
+}
+
+.twitter-bird.active, .twitter-bird:hover {
+  -webkit-animation: fly 0.2s steps(3) 0 infinite;
+  -moz-animation: fly 0.2s steps(3) 0 infinite;
+  animation: fly 0.2s steps(3) 0 infinite;
+}
+
+@-webkit-keyframes fly {
+  from { background-position: 0 0; }
+    to { background-position: -450px 0; }
+}
+@-moz-keyframes fly {
+  from { background-position: 0 0; }
+    to { background-position: -450px 0; }
+}
+@keyframes fly {
+  from { background-position: 0 0; }
+    to { background-position: -450px 0; }
+}
+
+

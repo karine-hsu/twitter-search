@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- stylez -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+
+    <body>
+
+    <!-- Main jumbotron -->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="twitter-bird step"></div>
+        <h1 class="header">What are you searching for?</h1>
+        <br>
+        <form class="form-search">
+          <input type="text" id="query" class="input-medium search-query" style="width:100%; padding-left:10px;" placeholder="Type in a keyword to search Twitter">
+          <a id="adv-search-button" class="btn"><span id="a-or-b">Advanced</span> search options &raquo;</a>
+          <a id="search-history-button" class="btn"><span id="v-or-h">View</span> search history &raquo;</a>
+          <div class="advanced">
+            <div class="since date-entry"> 
+              <label>Since: </label>
+              <div class="month">
+                <select id="since-month" style="width:200px;">
+                  <option value=""></option>
+                  <option value="01">January</option>
+                  <option value="02">February</option>
+                  <option value="03">March</option>
+                  <option value="04">April</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
+                  <option value="08">August</option>
+                  <option value="09">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+              </div> <!--/month-->
+              <div class="day">
+                <select id="since-day" style="width:200px;">
+                  <option></option>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+              </div> <!--/day-->
+              <div class="year">
+                <select id="since-year" style="width:200px;">
+                  <option></option>
+                  <option>2013</option>
+                  <option>2012</option>
+                  <option>2011</option>
+                  <option>2010</option>
+                  <option>2009</option>
+                  <option>2008</option>
+                  <option>2007</option>
+                  <option>2006</option>
+                </select>
+              </div> <!--/year-->
+              <div class="sanity-check green">&#10004;</div>
+              <div class="sanity-check red">&#x2717;</div>
+            </div> <!--/since-->
+            <div class="until date-entry"> 
+              <label>Until: </label>
+              <div class="month">
+                <select id="until-month" style="width:200px;">
+                  <option value=""></option>
+                  <option value="01">January</option>
+                  <option value="02">February</option>
+                  <option value="03">March</option>
+                  <option value="04">April</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
+                  <option value="08">August</option>
+                  <option value="09">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+              </div> <!--/month-->
+              <div class="day">
+                <select id="until-day" style="width:200px;">
+                  <option></option>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+              </div> <!--/day-->
+              <div class="year">
+                <select id="until-year" style="width:200px;">
+                  <option></option>
+                  <option>2013</option>
+                  <option>2012</option>
+                  <option>2011</option>
+                  <option>2010</option>
+                  <option>2009</option>
+                  <option>2008</option>
+                  <option>2007</option>
+                  <option>2006</option>
+                </select>
+              </div> <!--/year-->
+              <div class="sanity-check green">&#10004;</div>
+              <div class="sanity-check red">&#x2717;</div>
+            </div> <!--/until-->
+            <div class="place">
+              <label>Place: </label>
+              <input type="text" id="adv-place" class="input-small" style="height:45px; width:50%;" placeholder="Twitter ID of place">
+            </div>
+          </div>
+          <div class="search-history">
+            <div class="history-header">Search History</div>
+            <div class="content">
+              <!-- history populates here -->
+            </div>
+          </div>
+        </form>
+        <div class="search-button-container">
+          <a id="search-button" class="btn btn-success btn-lg">Twitter Search &raquo;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container main">
+        <!-- tweets populate here -->
+    </div>
+    <div id="loading">Loading more tweets...</div>
+
+    <div class="container">
+      <footer>
+        <a href="http://www.emilyhsia.com">&copy; Emily Hsia 2013</a>
+      </footer>
+    </div> <!-- /container -->        
+
+        <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/vendor/codebird-js/sha1.js"></script>
+        <script type="text/javascript" src="js/vendor/codebird-js/codebird.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
